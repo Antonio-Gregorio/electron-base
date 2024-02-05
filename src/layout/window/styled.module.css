@@ -1,0 +1,93 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--background-1), var(--background-2));
+
+    overflow: hidden;
+}
+
+.frame {
+    min-height: 30px;
+    padding: 0px 0px 0px 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to right, var(--frame-1), var(--frame-2));
+
+    -webkit-app-region: drag;
+}
+
+.frame_left {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame_left h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    user-select: none;
+}
+
+.frame_right {
+    height: 100%;
+    display: flex;
+}
+
+.frame_right button {
+    height: 100%;
+    width: 40px;
+
+    color: var(--icon-color);
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-app-region: no-drag;
+}
+
+.minimize:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.minimize:active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.close:hover {
+    background: rgba(255, 0, 0, 0.12);
+}
+
+.close:active {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.section {
+    min-height: 2px;
+    height: 100%;
+}
+
+.footer {
+    min-height: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background: var(--footer-color);
+}
+
+.footer * {
+    width: 100%;
+    bottom: 0;
+    margin: auto 0;
+}
