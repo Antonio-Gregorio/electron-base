@@ -1,0 +1,34 @@
+.item {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+
+    border-radius: 15px;
+    background-color: var(--bs-body-bg);
+}
+
+.item_image {
+    height: 100%;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.item_data {
+    padding: 10px 0px;
+}
+
+.item_data * {
+    user-select: none;
+}

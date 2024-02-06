@@ -2,10 +2,15 @@ import React, {createContext, useContext, useEffect, useState} from 'react';
 
 const UseTheme = createContext();
 
+const getThemeConfig = () => {
+    return window.electron.ipcRenderer.findSettings().then
+}
+
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
     useEffect(() => {
+        localStorage.setItem("theme", theme);
         document.body.setAttribute("data-bs-theme", theme);
     }, [theme]);
 

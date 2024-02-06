@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faDownLeftAndUpRightToCenter, faMoon, faSun, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {faDownLeftAndUpRightToCenter, faMoon, faSun, faTerminal, faTimes} from "@fortawesome/free-solid-svg-icons";
 import styled from "./styled.module.css";
 import {useWindow} from "../../hooks/useWindow";
 import {useTheme} from "../../hooks/useTheme";

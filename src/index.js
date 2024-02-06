@@ -10,6 +10,10 @@ import {
     Routes
 } from "react-router-dom";
 import Hook from "./hooks/hook";
+import PhpPage from "./pages/php";
+import SettingsPage from "./pages/settings";
+import HostPage from "./pages/hosts";
+import ProjectPage from "./pages/project";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,7 +24,10 @@ root.render(
                 <BrowserRouter>
                     <Sidebar>
                         <Routes>
-                            <Route path="/" element={<h2>ROUTE</h2>}/>
+                            <Route path="/" element={<ProjectPage/>}/>
+                            <Route path="/php" element={<PhpPage/>}/>
+                            <Route path="/hosts" element={<HostPage/>}/>
+                            <Route path="/settings" element={<SettingsPage/>}/>
                         </Routes>
                     </Sidebar>
                 </BrowserRouter>

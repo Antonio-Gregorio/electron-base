@@ -82,7 +82,7 @@
     min-height: 10px;
     padding: 5px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     background: var(--footer-color);
 }
 
